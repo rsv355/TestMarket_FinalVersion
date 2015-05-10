@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/required_red"
+    android:padding="5dp"
+    android:tag="tag" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Filter by"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/filter_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="16dp" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:checked="true"
+                android:text="All Regions" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_gray"
+                android:text="North" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="South" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_gray"
+                android:text="East" />
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="West" />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/very_light_gray"
+                android:text="Center" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/filter_menu.xml -->

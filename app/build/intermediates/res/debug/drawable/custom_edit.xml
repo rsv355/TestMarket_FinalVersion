@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/edit_clicked" android:state_pressed="true"/>
+    <item android:drawable="@drawable/edit1"/>
+
+</selector><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/drawable/custom_edit.xml -->

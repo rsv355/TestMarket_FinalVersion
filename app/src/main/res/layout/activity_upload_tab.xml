@@ -1,0 +1,695 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebackground"
+    android:orientation="vertical"
+    tools:context=".LinearLayout" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp" >
+
+            <TextView
+                style="@style/customstylelable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="New Product Information" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Description" />
+
+                <EditText
+                    android:id="@+id/description"
+                    style="@style/customstyleedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine"
+                    android:scrollHorizontally="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Quantity" />
+
+                <EditText
+                    android:id="@+id/quantity"
+                    style="@style/customstyleedittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.50"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Collection\nAddress" />
+
+                <EditText
+                    android:id="@+id/address"
+                    style="@style/customstyleedittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textImeMultiLine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Region" />
+
+                <Spinner
+                    android:id="@+id/uploadtap_region"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight=".5" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Collection Start Date and Time" />
+
+                <LinearLayout
+                    android:id="@+id/DateandTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/date_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/date_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/date_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/date_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/month_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/month_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/month_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/month_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/year_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/year_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/year_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/year_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/hour_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/hour_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/hour_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/hour_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/min_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/min_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/min_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/min_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="Collection End Date and Time" />
+
+                <LinearLayout
+                    android:id="@+id/endDateandTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:baselineAligned="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/enddate_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/enddate_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/enddate_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/enddate_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/endmonth_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/endmonth_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/endmonth_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/endmonth_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/endyear_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/endyear_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/endyear_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/endyear_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/endhour_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/endhour_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/endhour_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" >
+                        </EditText>
+
+                        <Button
+                            android:id="@+id/endhour_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textSize="30sp" />
+
+                    <LinearLayout
+                        android:id="@+id/endmin_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/endmin_plus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/arrow_up_hover" />
+
+                        <EditText
+                            android:id="@+id/endmin_display"
+                            android:layout_width="45dp"
+                            android:layout_height="35dp"
+                            android:background="@color/required_red"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="#C0C0C0" />
+
+                        <Button
+                            android:id="@+id/endmin_minus"
+                            android:layout_width="30dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/arrow_down_hover" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="  Upload Photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/upload_gallary"
+                    style="@style/customstyleloggingbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Open Gallery " />
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="OR" />
+
+                <Button
+                    android:id="@+id/uploadURL"
+                    style="@style/customstyleloggingbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Take a Photo " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/URLContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/camerapic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="(Click on image to edit)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ImageContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/uploadthispic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    style="@style/customstylelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="(Click on image to edit)" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/post"
+                style="@style/customstyleloggingbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Post!" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

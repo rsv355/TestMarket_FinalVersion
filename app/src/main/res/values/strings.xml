@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestMarket</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="profilePic">Once your profile picture is set, it can\'t be changed.</string>
+    <string name="profile"><b>Setup your Profile</b></string>
+    <string name="emailTextView">Email :</string>
+    <string name="passwordTextView">Password :</string>
+    <string name="signinbutton">Sign in</string>
+    <string name="donthaveaccount">Not registered yet? <u><b>Sign Up Now!</b></u></string>
+    <string name="appName"><b>Test Market</b></string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_me_tab">MeTab</string>
+    <string name="title_activity_market_place_tab">MarketPLaceTab</string>
+    <string name="title_activity_upload_tab">UploadTab</string>
+    <string name="title_activity_tab_bar">TabBar</string>
+    <string name="title_activity_profile_tab">ProfileTab</string>
+    <string name="title_activity_profile_pic_picker">ProfilePicPicker</string>
+
+</resources>

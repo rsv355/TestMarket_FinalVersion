@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whitebackground"
+    
+    tools:context=".MainActivity" >
+<!-- 
+    <RelativeLayout
+        android:id="@+id/back_btn_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/required_red" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" />
+        
+        <TextView
+            android:id="@+id/label_txt"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" android:layout_centerInParent="true"
+            android:text="Redem" android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </RelativeLayout>
+    -->
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true" 
+        android:paddingBottom="@dimen/activity_vertical_margin"
+    	android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+    	android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/back_btn_tabbar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/redempage_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:text="Description:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/redempage_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Description Here....................................................................................................................................................................................."
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Region : "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/redempage_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Address:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/redempage_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Address Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/redempage_dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="End Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/redempage_enddateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <Button
+                    android:id="@+id/redempage_redemButton"
+                    style="@style/customstyleloggingbutton"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.31"
+                    android:text="Redeem now" />
+
+                <TextView
+                    android:id="@+id/redemed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Redeemed"
+                    android:textColor="@color/green"
+                    android:textSize="40sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/redem_page.xml -->

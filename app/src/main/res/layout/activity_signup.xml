@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebackground"
+    tools:context=".LinearLayout" >
+    
+    <RelativeLayout
+        android:id="@+id/back_btn_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/required_red" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" />
+        
+        <TextView
+            android:id="@+id/label_txt"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" android:layout_centerInParent="true"
+            android:text="Registration" android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </RelativeLayout>
+        
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        android:src="@drawable/newlogo2" />
+    
+    	 <TextView
+            android:id="@+id/logoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:text="@string/appName" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView1"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="Name :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            style="@style/customstyleedittext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.50"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView2"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Email :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            style="@style/customstyleedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.50"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_redirect_to_signup"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Password :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            style="@style/customstyleedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.50"
+            android:inputType="textPassword" 
+            android:imeOptions="actionNext"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView7"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Contact :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/signup_contact"
+            style="@style/customstyleedittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.50"
+            android:inputType="phone"
+            android:imeOptions="actionDone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView4"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Region :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/signup_countrylist"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_weight="0.50" >
+        </Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView5"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Birthday :"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/signup_daylist"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/signup_monthllist"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp" >
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/signup_yearlist"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="250dp" >
+        </Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/signup_textView6"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Gender :"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/signup_genderlist"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" 
+            android:layout_marginLeft="110dp">
+        </Spinner>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signup_button"
+        style="@style/customstyleloggingbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Sign up" />
+
+    </LinearLayout>
+        
+        
+        
+    </ScrollView>
+
+</LinearLayout>

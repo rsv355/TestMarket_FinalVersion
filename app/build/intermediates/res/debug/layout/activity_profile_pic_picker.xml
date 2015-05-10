@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePicPicker" >
+
+    <RelativeLayout
+        android:id="@+id/profile_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/required_red" >
+
+<!--      <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" /> -->
+        
+        
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/choose"
+        style="@style/customstyleloggingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/profilePic"
+        android:layout_alignRight="@+id/profilePic"
+        android:layout_below="@+id/profilePic"
+        android:text="Choose image" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_profile" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/customstyleloggingbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/choose"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="36dp"
+        android:text="Launch Test Market App" />
+
+</RelativeLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/activity_profile_pic_picker.xml -->

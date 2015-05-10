@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidProjects\TestMarket_FinalVersion\app\libs\socialauth-android-3.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="32bae3266a7c49bc7019ef3a868d080cb141f8d3">
+        <dex dex="D:\AndroidProjects\TestMarket_FinalVersion\app\build\intermediates\pre-dexed\debug\socialauth-android-3.2-1c1bba7928466b27d5811b25036267c20638f993.jar" />
+    </item>
+    <item
+        jar="D:\Android-SDK\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\AndroidProjects\TestMarket_FinalVersion\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-86cb36b7100950862eee42ab4f83f7170a9bac7f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\TestMarket_FinalVersion\app\libs\socialauth-4.4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a867292683d6086af72c7cac181892e118058989">
+        <dex dex="D:\AndroidProjects\TestMarket_FinalVersion\app\build\intermediates\pre-dexed\debug\socialauth-4.4-83f253baf9f92c7b7291413853b350177938dc5d.jar" />
+    </item>
+
+</items>

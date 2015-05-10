@@ -1,0 +1,220 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whitebackground"
+    tools:context=".MainActivity" >
+
+    
+    <RelativeLayout
+        android:id="@+id/mylistings_itempage_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/required_red" >
+
+<!--   <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" /> -->
+         
+        <ImageButton
+            android:id="@+id/mylistings_itempage_remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_remove" />
+
+        <ImageButton
+            android:id="@+id/mylistings_itempage_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mylistings_itempage_remove_button"
+            android:background="@drawable/custom_edit" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/mylistings_itempage_tabbar"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/mylistings_itempage_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:text="Description:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:editable="true"
+                    android:text="Description Here....................................................................................................................................................................................."
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Region : "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <Spinner
+                    android:id="@+id/mylistings_itempage_spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Address:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Address Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Start Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection End Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_enddateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Remaining Quantity"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <EditText
+                    android:id="@+id/mylistings_itempage_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="@color/required_red"
+                    android:textSize="@dimen/sixteen" 
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/mylistings_itempage_expired"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Expired"
+                    android:textColor="@color/required_red"
+                    android:textSize="40sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/mylistings_itempage_donebutton"
+                    style="@style/customstyleloggingbutton"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.31"
+                    android:text="Done" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

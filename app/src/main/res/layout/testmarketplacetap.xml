@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/very_light_gray" >
+
+    <ProgressBar
+        android:id="@+id/testmarkettap_progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/testmarkettap_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="There is no products yet"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/n"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/very_light_gray" >
+
+            <TextView
+                style="@style/customstylelable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Marketplace" />
+
+            <ToggleButton
+                android:id="@+id/filter_toggle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/filter"
+                android:textOff=""
+                android:textOn="" />
+
+            <ImageButton
+                android:id="@+id/refresh_butto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/filter_toggle"
+                android:layout_centerVertical="true"
+                android:background="@drawable/custom_refresh" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:divider="@color/very_light_gray"
+            android:dividerHeight="10.0sp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomePageActivity" >
+
+    <RelativeLayout
+        android:id="@+id/homepage_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/required_red" >
+
+        <ImageButton
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/custom_camera" />
+
+        <ToggleButton
+            android:id="@+id/humanhead_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_humanhead"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageButton
+            android:id="@+id/cart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/custom_cart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/uploadtab_outerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homepage_tabbar"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/activity_upload_tab" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/testmarkettap_outerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homepage_tabbar" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/testmarketplacetap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mysamplestab_outerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homepage_tabbar"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/mysamplestap" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mylistingstab_outerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homepage_tabbar"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/mylistingstap" />
+    </RelativeLayout>
+
+      <RelativeLayout
+        android:id="@+id/myprofile_outerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/homepage_tabbar"
+       android:visibility="gone">
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/activity_profile_tab" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.testmarket"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.1.0'
+    compile files('libs/socialauth-4.4.jar')
+    compile files('libs/socialauth-android-3.2.jar')
+}

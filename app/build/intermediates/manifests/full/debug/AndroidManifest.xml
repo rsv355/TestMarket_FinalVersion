@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testmarket"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/newlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:value="@string/facebookApplicationId" />
+
+        <activity
+            android:name="com.example.testmarket.SignInActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.testmarket.SignupActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.testmarket.HomePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.testmarket.ProductPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.testmarket.ProfilePicPicker"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.testmarket.RedemPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.testmarket.MyListingsItemPageActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

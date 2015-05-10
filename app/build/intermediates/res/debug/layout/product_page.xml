@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whitebackground"
+    
+    tools:context=".MainActivity" >
+<!-- 
+    <RelativeLayout
+        android:id="@+id/back_btn_tabbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/required_red" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_button" />
+        
+        <TextView
+            android:id="@+id/label_txt"
+            style="@style/customstylelable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp" android:layout_centerInParent="true"
+            android:text="Product Detail" android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </RelativeLayout>
+     -->
+    <ProgressBar
+        android:id="@+id/prodcutpage_progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_below="@+id/back_btn_tabbar"
+        android:layout_alignParentLeft="true" 
+        >
+
+        <LinearLayout
+            android:id="@+id/productpage_outerlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/productpage_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Posted by :  "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/twenty" />
+
+                    <TextView
+                        android:id="@+id/productpage_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Amr...."
+                        android:textSize="@dimen/sixteen" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:text="Description:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/productpage_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Description Here....................................................................................................................................................................................."
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Region : "
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/productpage_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Address:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/productpage_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Address Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Collection Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/productpage_dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="End Date-time:"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/twenty" />
+
+                <TextView
+                    android:id="@+id/productpage_enddateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="Date-Time Here................"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="Remaning quantity:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sixteen" />
+
+                <TextView
+                    android:id="@+id/productpage_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="1"
+                    android:textSize="@dimen/sixteen" />
+
+                <Button
+                    android:id="@+id/productpage_sampleButton"
+                    style="@style/customstyleloggingbutton"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.31"
+                    android:text="sample now" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/product_page.xml -->
