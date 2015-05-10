@@ -9,7 +9,8 @@
     <string name="emailTextView">Email :</string>
     <string name="passwordTextView">Password :</string>
     <string name="signinbutton">Sign in</string>
-    <string name="donthaveaccount">Not registered yet? <u><b>Sign Up Now!</b></u></string>
+    <string name="donthaveaccount1">Not registered yet?</string>
+    <string name="donthaveaccount">Sign Up Now</string>
     <string name="appName"><b>Test Market</b></string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_me_tab">MeTab</string>

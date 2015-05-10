@@ -26,7 +26,8 @@
     <string name="action_settings">Settings</string>
     <string name="appName"><b>Test Market</b></string>
     <string name="app_name">TestMarket</string>
-    <string name="donthaveaccount">Not registered yet? <u><b>Sign Up Now!</b></u></string>
+    <string name="donthaveaccount">Sign Up Now</string>
+    <string name="donthaveaccount1">Not registered yet?</string>
     <string name="emailTextView">Email :</string>
     <string name="hello_world">Hello world!</string>
     <string name="passwordTextView">Password :</string>
@@ -81,13 +82,9 @@
         <item name="android:shadowRadius">0.6</item>
     </style>
     <style name="customstyleloggingbutton" parent="@android:style/Widget.Button">
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:gravity">center</item>
-        <item name="android:shadowColor">#000000</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
-        <item name="android:shadowRadius">0.6</item>
         <item name="android:background">@drawable/custom_logging_button</item>
     </style>
     <style name="customstylespinner" parent="@android:style/Widget.Spinner.DropDown">

@@ -1,27 +1,50 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#f0f0ee"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg_login"
+    android:id="@+id/relmain"
     tools:context=".SignInActivity" >
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/logoo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/newlogo" />
+        android:src="@drawable/app_logo" />
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/appName"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MARKET"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
 
     <Button
         android:id="@+id/fb_login_button"
@@ -29,7 +52,8 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_marginTop="10dp"
-        android:paddingLeft="15dp" android:background="@drawable/facebook_sign_in_icon"/>
+        android:paddingLeft="15dp"
+        android:background="@drawable/facebook_sign_in_icon1"/>
 
     <LinearLayout
         android:id="@+id/info"
@@ -46,18 +70,20 @@
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/useremail1" />
+                android:src="@drawable/useremail2" />
 
             <EditText
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/custom_edittext1"
                 android:id="@+id/email"
-                style="@style/customstyleedittext"
+                android:textSize="14sp"
+                android:hint="Enter E-mail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/imageView3"
-                android:ems="10"
                 android:inputType="textEmailAddress" >
 
-                <requestFocus />
             </EditText>
         </RelativeLayout>
 
@@ -66,14 +92,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp" >
 
+
             <EditText
+                android:ems="10"
+                android:gravity="center"
+                android:background="@drawable/custom_edittext1"
                 android:id="@+id/password"
-                style="@style/customstyleedittext"
+                android:textSize="14sp"
+                android:hint="Password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/imageView2"
-                android:ems="10"
                 android:inputType="textPassword" />
+
+
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -91,14 +123,31 @@
         android:layout_marginTop="50dp"
         android:text="@string/signinbutton" />
 
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/donthaveaccount1"
+            android:textAlignment="center"
+            android:textColor="#494949"
+            android:textSize="15sp" />
     <TextView
+        android:layout_marginLeft="3dp"
         android:id="@+id/signup_redirect_to_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+
         android:text="@string/donthaveaccount"
         android:textAlignment="center"
         android:textColor="#be2a3a"
         android:textSize="15sp" />
-
-</LinearLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/activity_signin.xml -->
+    </LinearLayout>
+</RelativeLayout><!-- From: file:/D:/AndroidProjects/TestMarket_FinalVersion/app/src/main/res/layout/activity_signin.xml -->

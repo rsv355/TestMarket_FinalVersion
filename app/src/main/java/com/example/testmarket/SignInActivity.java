@@ -76,7 +76,8 @@ public class SignInActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+
+			getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setContentView(R.layout.activity_signin);
 
@@ -127,7 +128,7 @@ public class SignInActivity extends Activity {
 		signIn.setLayoutParams(params1);
 
 		ViewGroup.LayoutParams params3 = emialIcon.getLayoutParams();
-		params3.width = imageWidth / 6;
+		params3.width = imageWidth / 5;
 		params3.height = imageHeight / 6;
 		emialIcon.setLayoutParams(params3);
 		passIcon.setLayoutParams(params3);
